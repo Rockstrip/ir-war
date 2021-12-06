@@ -17,7 +17,7 @@ namespace ir_war
 
         public Server()
         {
-            tcplistener = new TcpListener(IPAddress.Any, 8001);
+            tcplistener = new TcpListener(IPAddress.Any, 443);
             listenThread = new Thread(ListenForClients);
             networkStreams = new ConcurrentBag<NetworkStream>();
             OnDataReceived += SendToAllClients;

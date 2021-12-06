@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artes\\RiderProjects\\ir-war\\ir-war\\ir-war.csproj": {}
+    "C:\\Proga\\CSharp\\ir-war\\ir-war\\ir-war.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artes\\RiderProjects\\ir-war\\ir-war\\ir-war.csproj": {
+    "C:\\Proga\\CSharp\\ir-war\\ir-war\\ir-war.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artes\\RiderProjects\\ir-war\\ir-war\\ir-war.csproj",
+        "projectUniqueName": "C:\\Proga\\CSharp\\ir-war\\ir-war\\ir-war.csproj",
         "projectName": "ir-war",
-        "projectPath": "C:\\Users\\artes\\RiderProjects\\ir-war\\ir-war\\ir-war.csproj",
+        "projectPath": "C:\\Proga\\CSharp\\ir-war\\ir-war\\ir-war.csproj",
         "packagesPath": "C:\\Users\\artes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artes\\RiderProjects\\ir-war\\ir-war\\obj\\",
+        "outputPath": "C:\\Proga\\CSharp\\ir-war\\ir-war\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\artes\\AppData\\Roaming\\NuGet\\NuGet.Config"
