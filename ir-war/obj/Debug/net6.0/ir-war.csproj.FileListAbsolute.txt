@@ -1,0 +1,15 @@
+C:\Users\artes\RiderProjects\ir-war\ir-war\bin\Debug\net6.0\ir-war.exe
+C:\Users\artes\RiderProjects\ir-war\ir-war\bin\Debug\net6.0\ir-war.deps.json
+C:\Users\artes\RiderProjects\ir-war\ir-war\bin\Debug\net6.0\ir-war.runtimeconfig.json
+C:\Users\artes\RiderProjects\ir-war\ir-war\bin\Debug\net6.0\ir-war.dll
+C:\Users\artes\RiderProjects\ir-war\ir-war\bin\Debug\net6.0\ref\ir-war.dll
+C:\Users\artes\RiderProjects\ir-war\ir-war\bin\Debug\net6.0\ir-war.pdb
+C:\Users\artes\RiderProjects\ir-war\ir-war\obj\Debug\net6.0\ir-war.csproj.AssemblyReference.cache
+C:\Users\artes\RiderProjects\ir-war\ir-war\obj\Debug\net6.0\ir-war.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artes\RiderProjects\ir-war\ir-war\obj\Debug\net6.0\ir-war.AssemblyInfoInputs.cache
+C:\Users\artes\RiderProjects\ir-war\ir-war\obj\Debug\net6.0\ir-war.AssemblyInfo.cs
+C:\Users\artes\RiderProjects\ir-war\ir-war\obj\Debug\net6.0\ir-war.csproj.CoreCompileInputs.cache
+C:\Users\artes\RiderProjects\ir-war\ir-war\obj\Debug\net6.0\ir-war.dll
+C:\Users\artes\RiderProjects\ir-war\ir-war\obj\Debug\net6.0\ref\ir-war.dll
+C:\Users\artes\RiderProjects\ir-war\ir-war\obj\Debug\net6.0\ir-war.pdb
+C:\Users\artes\RiderProjects\ir-war\ir-war\obj\Debug\net6.0\ir-war.genruntimeconfig.cache
