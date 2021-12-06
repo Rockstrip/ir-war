@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proga\\CSharp\\ir-war\\ir-war\\ir-war.csproj": {}
+    "/home/azureuser/ir-war/ir-war/ir-war.csproj": {}
   },
   "projects": {
-    "C:\\Proga\\CSharp\\ir-war\\ir-war\\ir-war.csproj": {
+    "/home/azureuser/ir-war/ir-war/ir-war.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proga\\CSharp\\ir-war\\ir-war\\ir-war.csproj",
+        "projectUniqueName": "/home/azureuser/ir-war/ir-war/ir-war.csproj",
         "projectName": "ir-war",
-        "projectPath": "C:\\Proga\\CSharp\\ir-war\\ir-war\\ir-war.csproj",
-        "packagesPath": "C:\\Users\\artes\\.nuget\\packages\\",
-        "outputPath": "C:\\Proga\\CSharp\\ir-war\\ir-war\\obj\\",
+        "projectPath": "/home/azureuser/ir-war/ir-war/ir-war.csproj",
+        "packagesPath": "/home/azureuser/.nuget/packages/",
+        "outputPath": "/home/azureuser/ir-war/ir-war/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\artes\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/azureuser/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
