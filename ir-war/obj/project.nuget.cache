@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AFK8A3OOEoxnT5iMNXbjLYrUCRK73w7ZEWzztH3ZSmobCw+5/50xrfAzQ94t3GjBYOHlGcwtQEKCI9yfmOlreg==",
+  "dgSpecHash": "/0ygnVNxnIhxg7d7goGTwHlsw4kR/82oufyu8i9gcqUUxGTJkhA6HiQwlRVs8bCU6G/wgvcB/a45RIYO6rZU9g==",
   "success": true,
-  "projectFilePath": "C:\\Proga\\CSharp\\ir-war\\ir-war\\ir-war.csproj",
+  "projectFilePath": "/home/azureuser/ir-war/ir-war/ir-war.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
