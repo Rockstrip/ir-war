@@ -46,8 +46,8 @@ namespace ir_war
                 {
                     if (clientStream.CanRead)
                     {
-                        byte[] bytes = new byte[2];
-                        clientStream.Read(bytes, 0, 2);
+                        byte[] bytes = new byte[sizeof(float) * 3];
+                        clientStream.Read(bytes, 0, sizeof(float));
 
                         string returnData = Encoding.UTF8.GetString(bytes);
                         OnDataReceived.Invoke(returnData);
@@ -68,7 +68,7 @@ namespace ir_war
                 if (stream.CanWrite)
                 {
                     var mes = Encoding.UTF8.GetBytes(data);
-                    stream.Write(mes, 0, mes.Length);
+                    stream.Write(mes, 0, sizeof(float) * 3);
                 }
             }
         }
