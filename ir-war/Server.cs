@@ -47,7 +47,7 @@ namespace ir_war
                     if (clientStream.CanRead)
                     {
                         byte[] bytes = new byte[sizeof(float) * 3];
-                        clientStream.Read(bytes, 0, sizeof(float));
+                        clientStream.Read(bytes, 0, sizeof(float) * 3);
 
                         string returnData = Encoding.UTF8.GetString(bytes);
                         OnDataReceived.Invoke(returnData);
