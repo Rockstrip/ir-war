@@ -57,6 +57,7 @@ namespace ir_war
                 }
                 catch (IOException e)
                 {
+                    clientStream.Close();
                     Console.WriteLine(e.Message);
                     break;
                 }
