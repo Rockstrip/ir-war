@@ -36,6 +36,7 @@ namespace ir_war
         }
         private void ClientProcess(object? client)
         {
+            Console.WriteLine("START CONNECTION");
             TcpClient tcpClient = (TcpClient) client!;
             NetworkStream clientStream = tcpClient.GetStream();
             networkStreams.Add(clientStream);
@@ -50,18 +51,21 @@ namespace ir_war
                         clientStream.Read(bytes, 0, sizeof(float) * 3);
 
                         OnDataReceived.Invoke(bytes);
-
-                        string returnData = Encoding.UTF8.GetString(bytes);
-                        Console.WriteLine(returnData);
+                        
+                        Console.WriteLine("read data");
                     }
                 }
                 catch (IOException e)
                 {
                     clientStream.Close();
+                    tcpClient.Dispose();
+                    clientStream.Dispose();
                     Console.WriteLine(e.Message);
                     break;
                 }
             }
+
+            Console.WriteLine("END CONNECTION");
         }
         private void SendToAllClients(byte[] data)
         {
@@ -69,6 +73,7 @@ namespace ir_war
             {
                 if (stream.CanWrite)
                 {
+                    Console.WriteLine("send data");
                     stream.Write(data, 0, sizeof(float) * 3);
                 }
             }
