@@ -40,30 +40,16 @@ namespace ir_war
             TcpClient tcpClient = (TcpClient) client!;
             NetworkStream clientStream = tcpClient.GetStream();
             networkStreams.Add(clientStream);
-
-            while (true)
+            
+            byte[] bytes = new byte[sizeof(float) * 3];
+            while (clientStream.CanRead && clientStream.Read(bytes, 0, sizeof(float) * 3) > 0)
             {
-                try
-                {
-                    if (clientStream.CanRead)
-                    {
-                        byte[] bytes = new byte[sizeof(float) * 3];
-                        clientStream.Read(bytes, 0, sizeof(float) * 3);
-
-                        OnDataReceived.Invoke(bytes);
-                        
-                        Console.WriteLine("read data");
-                    }
-                }
-                catch (IOException e)
-                {
-                    clientStream.Close();
-                    tcpClient.Dispose();
-                    clientStream.Dispose();
-                    Console.WriteLine(e.Message);
-                    break;
-                }
+                OnDataReceived.Invoke(bytes);
+                Console.WriteLine("read data");
             }
+            clientStream.Close();
+            tcpClient.Dispose();
+            clientStream.Dispose();
 
             Console.WriteLine("END CONNECTION");
         }
