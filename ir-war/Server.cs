@@ -13,7 +13,7 @@ namespace ir_war
         private TcpListener tcplistener;
         private Thread listenThread;
         private ConcurrentBag<NetworkStream> networkStreams;
-        private event Action<byte[]> OnDataReceived;
+        private event Action<NetworkStream,byte[]> OnDataReceived;
 
         public Server()
         {
@@ -44,7 +44,7 @@ namespace ir_war
             byte[] bytes = new byte[sizeof(float) * 3];
             while (clientStream.CanRead && clientStream.Read(bytes, 0, sizeof(float) * 3) > 0)
             {
-                OnDataReceived.Invoke(bytes);
+                OnDataReceived.Invoke(clientStream,bytes);
                 Console.WriteLine("read data");
             }
             clientStream.Close();
@@ -53,11 +53,11 @@ namespace ir_war
 
             Console.WriteLine("END CONNECTION");
         }
-        private void SendToAllClients(byte[] data)
+        private void SendToAllClients(NetworkStream sender,byte[] data)
         {
             foreach (var stream in networkStreams)
             {
-                if (stream.CanWrite)
+                if (stream.CanWrite && sender != stream)
                 {
                     Console.WriteLine("send data");
                     stream.Write(data, 0, sizeof(float) * 3);
